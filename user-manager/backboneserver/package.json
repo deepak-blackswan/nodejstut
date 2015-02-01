@@ -1,0 +1,17 @@
+{
+  "name": "backboneserver",
+  "version": "1.0.0",
+  "description": "simple server to support backbone code example",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "dependencies":{
+    "express": "~3.0.0",
+    "nohm": "~0.9.1",
+    "redis": "~0.8.1"
+  },
+  "author": "Deepak Verma",
+  "license": "MIT"
+}
