@@ -1,0 +1,12 @@
+{
+  [
+    firstname: 'Deepak',
+    lastname: 'Verma',
+    age: 32
+  ],
+  [
+    firstname: 'Neha',
+    lastname: 'Verma',
+    age: 26
+  ],
+}
