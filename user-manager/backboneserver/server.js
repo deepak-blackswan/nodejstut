@@ -92,9 +92,13 @@ var updateUser = function (req, res) {
     });
 }
 app.all('*', function(req, res, next){
+    // CORS headers
     res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.header("Content-Type", "application/json");
+    res.header( 'Access-Control-Allow-Methods ', 'GET,PUT,POST,DELETE,OPTIONS' );
+    // Set custom headers for CORS
+    res.header( 'Access-Control-Allow-Headers', 'Content-type,Accept,X-Access-Token,X-Key, X-Requested-With' );
+
     next();
 });
 app.get('/users', listUsers);
