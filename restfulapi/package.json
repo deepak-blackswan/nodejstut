@@ -1,0 +1,23 @@
+{
+  "name": "restfulapi",
+  "version": "1.0.0",
+  "description": "restful api using Node.js, Restify and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies":{
+    "restify":"~2.8.5",
+    "mongodb":"~1.4.30",
+    "mongoose":"~3.8.23"
+  },
+  "keywords": [
+    "restful",
+    "api",
+    "restify",
+    "node.js",
+    "mongodb"
+  ],
+  "author": "Deepak Verma <mailto:info@deepakverma.com.au>",
+  "license": "MIT"
+}
