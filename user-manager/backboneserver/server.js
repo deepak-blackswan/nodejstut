@@ -1,19 +1,24 @@
 /**
  * Created by mankind on 1/02/15.
  */
-var express = require('express');
-var app = express();
+var express     = require('express');
+var app         = express();
+var nohm        = require('nohm').Nohm;
+
 app.use(express.bodyParser());
-var nohm = require('nohm').Nohm;
 
 if (process.env.REDISTOGO_URL) {
+
     // inside if statement
     var rtg   = require("url").parse(process.env.REDISTOGO_URL);
     var redis = require("redis").createClient(rtg.port, rtg.hostname);
 
     redis.auth(rtg.auth.split(":")[1]);
+
 } else {
+
     var redis = require("redis").createClient();
+
 }
 
 nohm.setClient(redis);
@@ -108,21 +113,3 @@ app.post('/users', createUser);
 app.put('/users/:id', updateUser);
 
 app.listen(port);
-
-
-/*
-
-
-
- var user = new User();
- user.p({
- firstname: 'Mark',
- lastname: 'Davis',
- age: 10
- });
-
- user.save(function (err) {
- console.log('saved user! :-)');
- });
-
- */
