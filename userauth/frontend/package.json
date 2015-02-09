@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Token based authentication boilerplate written in Angular js",
+  "main": "client.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "express": "4.x",
+    "body-parser": "~1.0.0",
+    "morgan": "latest",
+    "mongoose": "3.8.8",
+    "express-jwt": "0.2.1",
+    "jsonwebtoken": "0.4.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+    "angular",
+    "client",
+    "frontend"
+  ],
+  "author": "Deepak Verma <mailto: info@deepakverma.com.au>",
+  "license": "MIT"
+}

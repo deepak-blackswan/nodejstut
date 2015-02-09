@@ -1,0 +1,25 @@
+{
+  "name": "userauth",
+  "version": "1.0.0",
+  "description": "Boilerplate backend service to authenticate user and return token. can be used to build any webapp with independent frontend and backend and remove dependencies",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "express": "4.x",
+    "body-parser": "~1.0.0",
+    "morgan": "latest",
+    "mongoose": "3.8.8",
+    "jsonwebtoken": "0.4.0"
+  },
+  "keywords": [
+    "backend",
+    "express",
+    "nodejs",
+    "angular",
+    "passport"
+  ],
+  "author": "Deepak Verma <mailto: info@deepakverma.com.au>",
+  "license": "MIT"
+}

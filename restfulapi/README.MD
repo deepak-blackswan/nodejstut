@@ -1,8 +1,11 @@
-In a Blogging API, we need:
+## RESTFUL API BOILERPLATE ##
 
-Create, Update, Delete, View Article
-Create a comment for a specific Article, Update, Delete, View, Comment
-Create, Update, Delete, View User
+
+## In a Blogging API, we need: ##
+
+* Create, Update, Delete, View Article
+* Create a comment for a specific Article, Update, Delete, View, Comment
+* Create, Update, Delete, View User
 
 Resource Name   |   HTTP Verbs      |	HTTP Methods
 ----------------------------------------------------------------------------------
